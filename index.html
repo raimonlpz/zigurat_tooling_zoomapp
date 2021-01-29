@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous">
+    <title>ZOOM TASKS</title>
+    <link rel="stylesheet" href="style.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card" style="width: 30rem;">
+            <div class="card-body text-center">
+                <h2 class="card-title"><strong>🔮 ZOOM AKADEMICAPP 📚</strong></h2>
+                <div class="column">
+                    
+                    <label>Añadir <strong>'Dispositivos según Reuniones'</strong> (CSV)</label>
+                    <div class="col-md-3">
+                        <input class="form-control" type="file" id="input1" accept=".xls,.xlsx, .csv"  >
+                    </div>
+                    <br><br>
+
+                    <label>Añadir <strong>'Reuniones pasadas'</strong> (CSV)</label>
+                    <div class="col-md-3">
+                        <input class="form-control" type="file" id="input2" accept=".xls,.xlsx, .csv"  >
+                    </div>
+                    <br>
+                    <label for="name">Filtrar por email (host) de la reunión:</label>
+                    <input type="text" id="name" name="name"
+                        minlength="4" maxlength="40" size="10" style="width:220px">
+
+                    <div class='descarga' style="margin-top:2rem;">
+                        <button class="btn btn-dark btn-block btn-lg" id="button">¡Descargar!</button>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
